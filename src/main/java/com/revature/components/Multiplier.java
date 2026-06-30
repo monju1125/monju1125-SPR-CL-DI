@@ -23,6 +23,7 @@ public class Multiplier {
      * Generally, field injection is not recommended, but it works for this example.
      * @param adder
      */
+    @Autowired
     Adder adder;
 
     /**
@@ -31,6 +32,7 @@ public class Multiplier {
      * @param b number 2
      * @return a * b
      */
+    
     public double multiply(double a, double b){
         double result = 0;
         for(int i = 0; i < Math.abs(b); i++){
